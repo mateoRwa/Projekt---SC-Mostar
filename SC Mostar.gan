@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="SC Mostar" company="" webLink="http://" view-date="2026-05-14" view-index="0" gantt-divider-location="420" resource-divider-location="300" version="3.3.3316" locale="hr_HR">
+    <description/>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd15" name="Bilješke" width="20" order="0"/>
+        <field id="tpd3" name="Naziv" width="211" order="0"/>
+        <field id="tpd4" name="Početni datum" width="79" order="1"/>
+        <field id="tpd5" name="Završni datum" width="79" order="2"/>
+        <field id="tpd6" name="Trajanje" width="50" order="3"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Ime" width="210" order="0"/>
+        <field id="1" name="Zadana uloga" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" uid="16b20508f4134763acced85b4aee206b" name="Inicijacija projekta" meeting="false" start="2026-04-01" duration="5" complete="0" expand="false">
+            <task id="1" uid="f32bdac8589b4172b57949fa5fc3add5" name="Porcjena resursa" meeting="false" start="2026-04-01" duration="2" complete="0" expand="true"/>
+            <task id="2" uid="4562e386b9584a4c85780fd2dbb1b4fb" name="Odabir voditelja" meeting="false" start="2026-04-03" duration="2" complete="0" expand="true"/>
+            <task id="3" uid="92a173c63b0e40eb9e83d74256c850be" name="Ustroj ekipa" meeting="false" start="2026-04-07" duration="1" complete="0" expand="true"/>
+            <task id="4" uid="ec2823f5d5b84dd789986ac0bc210e77" name="Plan intervjuiranja" meeting="true" start="2026-04-07" duration="0" complete="0" expand="true"/>
+        </task>
+        <task id="5" uid="ea04b546d92145759048413508f46743" name="Analiza" meeting="false" start="2026-04-08" duration="12" complete="0" expand="false">
+            <task id="6" uid="9303b80ce7a64159b6f54cf17d8edb24" name="Intervjuiranje u SC Mostar" meeting="false" start="2026-04-08" duration="5" complete="0" expand="true"/>
+            <task id="7" uid="696d1a54ad0d46c8ad5f1a38a12459e1" name="Pisanje zapisnika" meeting="false" start="2026-04-15" duration="3" complete="0" expand="true"/>
+            <task id="8" uid="36916139cf45415b884bb991c3fdc3b4" name="Analiza zahtjeva" meeting="false" start="2026-04-15" duration="5" complete="0" expand="true"/>
+            <task id="9" uid="0af1ff359d8d4ac981b02f2a654b4ebc" name="Funkcionalna dokumentacija" meeting="false" start="2026-04-22" duration="2" complete="0" expand="true"/>
+        </task>
+        <task id="11" uid="098b633afbbd4b50865b903c2bd55fac" name="Dizajn sustava" meeting="false" start="2026-04-24" duration="13" complete="0" expand="false">
+            <task id="12" uid="49f7d22681f947809b6a3159d8c310bf" name="Konceptualni model baze" meeting="false" start="2026-04-24" duration="5" complete="0" expand="true"/>
+            <task id="13" uid="1c635dd4dfbd4a99b01e9abee3cae8d8" name="Dizajn korisničkog sučelja" meeting="false" start="2026-05-01" duration="5" complete="0" expand="true"/>
+            <task id="14" uid="bef49aab80db42aba1cdadd09cf4536a" name="Logičko modeliranje procesa" meeting="false" start="2026-05-08" duration="3" complete="0" expand="true"/>
+        </task>
+        <task id="15" uid="849165acfebb408bb5ed393f9ac0e7b4" name="Razvoj i implementacija" meeting="false" start="2026-05-13" duration="18" complete="0" expand="false">
+            <task id="16" uid="815788e4ab4b40d689e7ccf56d4c2330" name="Ugradnja baze podataka" meeting="false" start="2026-05-13" duration="4" complete="0" expand="true"/>
+            <task id="17" uid="116404641b3747c39bd3b0b3a6d592d5" name="Izrada modula Smještaj" meeting="false" start="2026-05-19" duration="8" complete="0" expand="true"/>
+            <task id="18" uid="c2704c8709fb441b961c44dce9f36bf7" name="Izrada modula Prehrana" meeting="false" start="2026-05-29" duration="6" complete="0" expand="true"/>
+        </task>
+        <task id="19" uid="d4481fa76b1e43e9a61289587c1178b7" name="Završna faza" meeting="false" start="2026-06-08" duration="5" complete="0" expand="false">
+            <task id="20" uid="98b174ebe5a446ce8bb00556ea2fa11f" name="Analiza izvodljivosti i testiranje" meeting="false" start="2026-06-08" duration="3" complete="0" expand="true"/>
+            <task id="21" uid="f59a89cf462a437ab746db0049a0ac0a" name="Plan projekta-konačna verzija" meeting="false" start="2026-06-11" duration="1" complete="0" expand="true"/>
+            <task id="22" uid="e3b95ac70ec241e3bb0db1f5fee9e679" name="Idejno rješenje" meeting="false" start="2026-06-12" duration="1" complete="0" expand="true"/>
+        </task>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
