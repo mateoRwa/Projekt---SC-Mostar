@@ -1,0 +1,275 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3">
+  <diagram name="Page-1" id="tofFo3HsHugo1FLlTvyz">
+    <mxGraphModel dx="213889" dy="143306" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="startNode" value="" style="ellipse;fillColor=#000000;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="60" y="260" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="endSymbol" value="" style="ellipse;html=1;shape=doubleEllipse;aspect=fixed;fillColor=#000000;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="260" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="state1" value="U izradi" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="300" y="240" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="state2" value="Zaprimljena" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="460" y="240" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="state3" value="U obradi" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="620" y="240" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="state4" value="Validna" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="620" y="400" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="state5" value="Bodovana" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="780" y="400" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="state6" value="Privremeno rangirana" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="940" y="400" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="state7" value="Konačno prihvaćena" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="940" y="560" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="state8" value="Rezervirana soba" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="560" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="state9" value="Nevaljana" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="780" y="240" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="state11" value="Useljen" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1260" y="560" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="term1" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="state10" target="endSymbol" />
+        <mxCell id="term2" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="state11" target="endSymbol" />
+        <mxCell id="transition1" value="Student otvara novu prijavu" style="endArrow=block;html=1;rounded=1;orthogonalLoop=1;jettySize=auto;" edge="1" parent="1" source="startNode" target="state0" />
+        <mxCell id="transition2" value="Kreiraj prijavu" style="endArrow=block;html=1;rounded=1;orthogonalLoop=1;jettySize=auto;" edge="1" parent="1" source="state0" target="state1" />
+        <mxCell id="transition3" value="Spremi promjene" style="endArrow=block;html=1;rounded=1;orthogonalLoop=1;jettySize=auto;orthogonalEdgeStyle;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="state1" target="state1" />
+        <mxCell id="transition4" value="Pošalji prijavu" style="endArrow=block;html=1;rounded=1;orthogonalLoop=1;jettySize=auto;" edge="1" parent="1" source="state1" target="state2" />
+        <mxCell id="transition5" value="Referent počinje pregled" style="endArrow=block;html=1;rounded=1;orthogonalLoop=1;jettySize=auto;" edge="1" parent="1" source="state2" target="state3" />
+        <mxCell id="transition6" value="Pronađena neispravna\\ndokumentacija" style="endArrow=block;html=1;rounded=1;orthogonalLoop=1;jettySize=auto;" edge="1" parent="1" source="state3" target="state9" />
+        <mxCell id="transition7" value="Student dopunjuje" style="endArrow=block;html=1;rounded=1;orthogonalLoop=1;jettySize=auto;orthogonalEdgeStyle;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="state9" target="state9" />
+        <mxCell id="transition8" value="Istek roka za dopunu" style="endArrow=block;html=1;rounded=1;orthogonalLoop=1;jettySize=auto;" edge="1" parent="1" source="state9" target="state10" />
+        <mxCell id="transition9" value="Dokumentacija uredna" style="endArrow=block;html=1;rounded=1;orthogonalLoop=1;jettySize=auto;" edge="1" parent="1" source="state3" target="state4" />
+        <mxCell id="transition10" value="Izvrši automatizirani izračun" style="endArrow=block;html=1;rounded=1;orthogonalLoop=1;jettySize=auto;" edge="1" parent="1" source="state4" target="state5" />
+        <mxCell id="transition11" value="Objava privremene rang liste" style="endArrow=block;html=1;rounded=1;orthogonalLoop=1;jettySize=auto;" edge="1" parent="1" source="state5" target="state6" />
+        <mxCell id="transition12" value="Iznad praga, istek roka za žalbe" style="endArrow=block;html=1;rounded=1;orthogonalLoop=1;jettySize=auto;" edge="1" parent="1" source="state6" target="state7" />
+        <mxCell id="transition13" value="Žalba odbijena / Nema žalbi" style="endArrow=block;html=1;rounded=1;orthogonalLoop=1;jettySize=auto;" edge="1" parent="1" source="state6" target="state10" />
+        <mxCell id="transition14" value="Student bira sobu" style="endArrow=block;html=1;rounded=1;orthogonalLoop=1;jettySize=auto;" edge="1" parent="1" source="state7" target="state8" />
+        <mxCell id="transition15" value="Potvrda useljenja" style="endArrow=block;html=1;rounded=1;orthogonalLoop=1;jettySize=auto;" edge="1" parent="1" source="state8" target="state11" />
+        <mxCell id="title" value="Dijagram promjene stanja: Prijava (Mostar Studentski Centar)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="40" width="800" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n03La1ocpsdrqhST3Y6S-3" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="n03La1ocpsdrqhST3Y6S-20" target="n03La1ocpsdrqhST3Y6S-21">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="360" as="sourcePoint" />
+            <mxPoint x="540" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n03La1ocpsdrqhST3Y6S-4" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="state9" target="state3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="360" as="sourcePoint" />
+            <mxPoint x="540" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n03La1ocpsdrqhST3Y6S-5" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="state3" target="state9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="360" as="sourcePoint" />
+            <mxPoint x="540" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n03La1ocpsdrqhST3Y6S-6" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="state5" target="state6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="360" as="sourcePoint" />
+            <mxPoint x="540" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n03La1ocpsdrqhST3Y6S-7" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="state6" target="state7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="360" as="sourcePoint" />
+            <mxPoint x="540" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n03La1ocpsdrqhST3Y6S-8" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="state7" target="state8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="360" as="sourcePoint" />
+            <mxPoint x="540" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n03La1ocpsdrqhST3Y6S-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="state8" target="state11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="850" y="360" as="sourcePoint" />
+            <mxPoint x="900" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n03La1ocpsdrqhST3Y6S-10" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="state1" target="state2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="360" as="sourcePoint" />
+            <mxPoint x="400" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n03La1ocpsdrqhST3Y6S-12" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="state2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="360" as="sourcePoint" />
+            <mxPoint x="610" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n03La1ocpsdrqhST3Y6S-13" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="startNode" target="state1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="360" as="sourcePoint" />
+            <mxPoint x="400" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n03La1ocpsdrqhST3Y6S-14" value="" style="ellipse;fillColor=#000000;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="60" y="260" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="n03La1ocpsdrqhST3Y6S-15" value="" style="ellipse;html=1;shape=doubleEllipse;aspect=fixed;fillColor=#000000;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="260" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="n03La1ocpsdrqhST3Y6S-17" value="U izradi" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="300" y="240" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n03La1ocpsdrqhST3Y6S-18" value="Zaprimljena" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="460" y="240" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n03La1ocpsdrqhST3Y6S-19" value="U obradi" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="620" y="240" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n03La1ocpsdrqhST3Y6S-20" value="Validna" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="620" y="400" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n03La1ocpsdrqhST3Y6S-21" value="Bodovana" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="780" y="400" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n03La1ocpsdrqhST3Y6S-22" value="Privremeno rangirana" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="940" y="400" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n03La1ocpsdrqhST3Y6S-23" value="Konačno prihvaćena" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="940" y="560" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n03La1ocpsdrqhST3Y6S-24" value="Rezervirana soba" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="560" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n03La1ocpsdrqhST3Y6S-25" value="Nevaljana" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="780" y="240" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n03La1ocpsdrqhST3Y6S-26" value="Odbijena (Konačno)" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="920" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n03La1ocpsdrqhST3Y6S-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="n03La1ocpsdrqhST3Y6S-27" target="n03La1ocpsdrqhST3Y6S-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n03La1ocpsdrqhST3Y6S-27" value="Useljen" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1260" y="560" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n03La1ocpsdrqhST3Y6S-28" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="n03La1ocpsdrqhST3Y6S-26" target="n03La1ocpsdrqhST3Y6S-15" parent="1" />
+        <mxCell id="n03La1ocpsdrqhST3Y6S-29" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="n03La1ocpsdrqhST3Y6S-27" target="n03La1ocpsdrqhST3Y6S-15" parent="1" />
+        <mxCell id="n03La1ocpsdrqhST3Y6S-30" value="Student otvara novu prijavu" style="endArrow=block;html=1;rounded=1;orthogonalLoop=1;jettySize=auto;" edge="1" source="n03La1ocpsdrqhST3Y6S-14" target="n03La1ocpsdrqhST3Y6S-16" parent="1" />
+        <mxCell id="n03La1ocpsdrqhST3Y6S-31" value="Kreiraj prijavu" style="endArrow=block;html=1;rounded=1;orthogonalLoop=1;jettySize=auto;" edge="1" source="n03La1ocpsdrqhST3Y6S-16" target="n03La1ocpsdrqhST3Y6S-17" parent="1" />
+        <mxCell id="n03La1ocpsdrqhST3Y6S-32" value="Spremi promjene" style="endArrow=block;html=1;rounded=1;orthogonalLoop=1;jettySize=auto;orthogonalEdgeStyle;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0;exitDx=0;exitDy=0;" edge="1" source="n03La1ocpsdrqhST3Y6S-17" target="n03La1ocpsdrqhST3Y6S-17" parent="1" />
+        <mxCell id="n03La1ocpsdrqhST3Y6S-33" value="Pošalji prijavu" style="endArrow=block;html=1;rounded=1;orthogonalLoop=1;jettySize=auto;" edge="1" source="n03La1ocpsdrqhST3Y6S-17" target="n03La1ocpsdrqhST3Y6S-18" parent="1" />
+        <mxCell id="n03La1ocpsdrqhST3Y6S-34" value="Referent počinje pregled" style="endArrow=block;html=1;rounded=1;orthogonalLoop=1;jettySize=auto;" edge="1" source="n03La1ocpsdrqhST3Y6S-18" target="n03La1ocpsdrqhST3Y6S-19" parent="1" />
+        <mxCell id="n03La1ocpsdrqhST3Y6S-35" value="Pronađena neispravna\\ndokumentacija" style="endArrow=block;html=1;rounded=1;orthogonalLoop=1;jettySize=auto;" edge="1" source="n03La1ocpsdrqhST3Y6S-19" target="n03La1ocpsdrqhST3Y6S-25" parent="1" />
+        <mxCell id="n03La1ocpsdrqhST3Y6S-36" value="Student dopunjuje" style="endArrow=block;html=1;rounded=1;orthogonalLoop=1;jettySize=auto;orthogonalEdgeStyle;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0;exitDx=0;exitDy=0;" edge="1" source="n03La1ocpsdrqhST3Y6S-25" target="n03La1ocpsdrqhST3Y6S-25" parent="1" />
+        <mxCell id="n03La1ocpsdrqhST3Y6S-37" value="Istek roka za dopunu" style="endArrow=block;html=1;rounded=1;orthogonalLoop=1;jettySize=auto;" edge="1" source="n03La1ocpsdrqhST3Y6S-25" target="n03La1ocpsdrqhST3Y6S-26" parent="1" />
+        <mxCell id="n03La1ocpsdrqhST3Y6S-38" value="Dokumentacija uredna" style="endArrow=block;html=1;rounded=1;orthogonalLoop=1;jettySize=auto;" edge="1" source="n03La1ocpsdrqhST3Y6S-19" target="n03La1ocpsdrqhST3Y6S-20" parent="1" />
+        <mxCell id="n03La1ocpsdrqhST3Y6S-39" value="Izvrši automatizirani izračun" style="endArrow=block;html=1;rounded=1;orthogonalLoop=1;jettySize=auto;" edge="1" source="n03La1ocpsdrqhST3Y6S-20" target="n03La1ocpsdrqhST3Y6S-21" parent="1" />
+        <mxCell id="n03La1ocpsdrqhST3Y6S-40" value="Objava privremene rang liste" style="endArrow=block;html=1;rounded=1;orthogonalLoop=1;jettySize=auto;" edge="1" source="n03La1ocpsdrqhST3Y6S-21" target="n03La1ocpsdrqhST3Y6S-22" parent="1" />
+        <mxCell id="n03La1ocpsdrqhST3Y6S-41" value="Iznad praga, istek roka za žalbe" style="endArrow=block;html=1;rounded=1;orthogonalLoop=1;jettySize=auto;" edge="1" source="n03La1ocpsdrqhST3Y6S-22" target="n03La1ocpsdrqhST3Y6S-23" parent="1" />
+        <mxCell id="n03La1ocpsdrqhST3Y6S-42" value="Žalba odbijena / Nema žalbi" style="endArrow=block;html=1;rounded=1;orthogonalLoop=1;jettySize=auto;" edge="1" source="n03La1ocpsdrqhST3Y6S-22" target="n03La1ocpsdrqhST3Y6S-26" parent="1" />
+        <mxCell id="n03La1ocpsdrqhST3Y6S-43" value="Student bira sobu" style="endArrow=block;html=1;rounded=1;orthogonalLoop=1;jettySize=auto;" edge="1" source="n03La1ocpsdrqhST3Y6S-23" target="n03La1ocpsdrqhST3Y6S-24" parent="1" />
+        <mxCell id="n03La1ocpsdrqhST3Y6S-44" value="Potvrda useljenja" style="endArrow=block;html=1;rounded=1;orthogonalLoop=1;jettySize=auto;" edge="1" source="n03La1ocpsdrqhST3Y6S-24" target="n03La1ocpsdrqhST3Y6S-27" parent="1" />
+        <mxCell id="n03La1ocpsdrqhST3Y6S-45" value="Dijagram promjene stanja: Prijava (Mostar Studentski Centar)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="40" width="800" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n03La1ocpsdrqhST3Y6S-46" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="n03La1ocpsdrqhST3Y6S-19" target="n03La1ocpsdrqhST3Y6S-20" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="360" as="sourcePoint" />
+            <mxPoint x="780" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n03La1ocpsdrqhST3Y6S-47" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" source="n03La1ocpsdrqhST3Y6S-25" target="n03La1ocpsdrqhST3Y6S-19" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="360" as="sourcePoint" />
+            <mxPoint x="540" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n03La1ocpsdrqhST3Y6S-48" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" source="n03La1ocpsdrqhST3Y6S-19" target="n03La1ocpsdrqhST3Y6S-25" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="360" as="sourcePoint" />
+            <mxPoint x="540" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n03La1ocpsdrqhST3Y6S-49" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" source="n03La1ocpsdrqhST3Y6S-21" target="n03La1ocpsdrqhST3Y6S-22" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="360" as="sourcePoint" />
+            <mxPoint x="540" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n03La1ocpsdrqhST3Y6S-50" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" source="n03La1ocpsdrqhST3Y6S-22" target="n03La1ocpsdrqhST3Y6S-23" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="360" as="sourcePoint" />
+            <mxPoint x="540" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n03La1ocpsdrqhST3Y6S-51" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" source="n03La1ocpsdrqhST3Y6S-23" target="n03La1ocpsdrqhST3Y6S-24" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="360" as="sourcePoint" />
+            <mxPoint x="540" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n03La1ocpsdrqhST3Y6S-52" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="n03La1ocpsdrqhST3Y6S-24" target="n03La1ocpsdrqhST3Y6S-27" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="850" y="360" as="sourcePoint" />
+            <mxPoint x="900" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n03La1ocpsdrqhST3Y6S-53" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="n03La1ocpsdrqhST3Y6S-17" target="n03La1ocpsdrqhST3Y6S-18" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="360" as="sourcePoint" />
+            <mxPoint x="400" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n03La1ocpsdrqhST3Y6S-54" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" source="n03La1ocpsdrqhST3Y6S-18" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="360" as="sourcePoint" />
+            <mxPoint x="610" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n03La1ocpsdrqhST3Y6S-55" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="n03La1ocpsdrqhST3Y6S-16" target="n03La1ocpsdrqhST3Y6S-17" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="360" as="sourcePoint" />
+            <mxPoint x="400" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n03La1ocpsdrqhST3Y6S-56" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="n03La1ocpsdrqhST3Y6S-14" target="n03La1ocpsdrqhST3Y6S-16">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="80" y="270" as="sourcePoint" />
+            <mxPoint x="300" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n03La1ocpsdrqhST3Y6S-16" value="Nema prijave" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="140" y="240" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n03La1ocpsdrqhST3Y6S-62" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="n03La1ocpsdrqhST3Y6S-19" target="n03La1ocpsdrqhST3Y6S-26">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="780" y="360" as="sourcePoint" />
+            <mxPoint x="830" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n03La1ocpsdrqhST3Y6S-63" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="n03La1ocpsdrqhST3Y6S-22" target="n03La1ocpsdrqhST3Y6S-26">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="780" y="360" as="sourcePoint" />
+            <mxPoint x="830" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n03La1ocpsdrqhST3Y6S-64" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="n03La1ocpsdrqhST3Y6S-26" target="n03La1ocpsdrqhST3Y6S-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="780" y="360" as="sourcePoint" />
+            <mxPoint x="830" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
