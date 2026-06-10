@@ -1,0 +1,81 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3">
+  <diagram name="Page-1" id="e8Q6FR-6hik8pEZMCXYU">
+    <mxGraphModel dx="1042" dy="634" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="k7EdXql89TFJ0GV-f5II-0" />
+        <mxCell id="k7EdXql89TFJ0GV-f5II-1" parent="k7EdXql89TFJ0GV-f5II-0" />
+        <mxCell id="k7EdXql89TFJ0GV-f5II-2" value="● Početak" style="rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=2;" vertex="1" parent="k7EdXql89TFJ0GV-f5II-1">
+          <mxGeometry x="190" y="410" width="95" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="k7EdXql89TFJ0GV-f5II-3" value="1. Pregled otvorenih natječaja" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="k7EdXql89TFJ0GV-f5II-1">
+          <mxGeometry x="107" y="499" width="260" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="k7EdXql89TFJ0GV-f5II-4" value="2. Popunjavanje obrasca i privitak dokumenata" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="k7EdXql89TFJ0GV-f5II-1">
+          <mxGeometry x="107" y="627" width="260" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="k7EdXql89TFJ0GV-f5II-5" value="3. Validacija i spremanje prijave" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="k7EdXql89TFJ0GV-f5II-1">
+          <mxGeometry x="20" y="755" width="260" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="k7EdXql89TFJ0GV-f5II-6" value="Podaci ispravni?" style="rhombus;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="k7EdXql89TFJ0GV-f5II-1">
+          <mxGeometry x="154" y="883" width="167" height="167" as="geometry" />
+        </mxCell>
+        <mxCell id="k7EdXql89TFJ0GV-f5II-7" value="4. Verifikacija i bodovanje od strane referenta" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="k7EdXql89TFJ0GV-f5II-1">
+          <mxGeometry x="107" y="1124" width="260" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="k7EdXql89TFJ0GV-f5II-8" value="5. Generiranje i objava bodovne liste" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="k7EdXql89TFJ0GV-f5II-1">
+          <mxGeometry x="107" y="1252" width="260" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="k7EdXql89TFJ0GV-f5II-9" value="● Završetak" style="ellipse;shape=doubleEllipse;aspect=fixed;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="k7EdXql89TFJ0GV-f5II-1">
+          <mxGeometry x="183" y="1380" width="109" height="109" as="geometry" />
+        </mxCell>
+        <mxCell id="k7EdXql89TFJ0GV-f5II-10" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="k7EdXql89TFJ0GV-f5II-1" source="k7EdXql89TFJ0GV-f5II-2" target="k7EdXql89TFJ0GV-f5II-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k7EdXql89TFJ0GV-f5II-11" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="k7EdXql89TFJ0GV-f5II-1" source="k7EdXql89TFJ0GV-f5II-3" target="k7EdXql89TFJ0GV-f5II-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k7EdXql89TFJ0GV-f5II-12" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.3;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="k7EdXql89TFJ0GV-f5II-1" source="k7EdXql89TFJ0GV-f5II-4" target="k7EdXql89TFJ0GV-f5II-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="150" y="730" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k7EdXql89TFJ0GV-f5II-13" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.1;entryY=0;rounded=0;" edge="1" parent="k7EdXql89TFJ0GV-f5II-1" source="k7EdXql89TFJ0GV-f5II-5" target="k7EdXql89TFJ0GV-f5II-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="150" y="858" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k7EdXql89TFJ0GV-f5II-14" value="Ne" style="curved=1;startArrow=none;endArrow=block;exitX=0.9;exitY=0;entryX=0.71;entryY=1;rounded=0;" edge="1" parent="k7EdXql89TFJ0GV-f5II-1" source="k7EdXql89TFJ0GV-f5II-6" target="k7EdXql89TFJ0GV-f5II-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="324" y="858" />
+              <mxPoint x="324" y="730" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k7EdXql89TFJ0GV-f5II-15" value="Da" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="k7EdXql89TFJ0GV-f5II-1" source="k7EdXql89TFJ0GV-f5II-6" target="k7EdXql89TFJ0GV-f5II-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k7EdXql89TFJ0GV-f5II-16" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="k7EdXql89TFJ0GV-f5II-1" source="k7EdXql89TFJ0GV-f5II-7" target="k7EdXql89TFJ0GV-f5II-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k7EdXql89TFJ0GV-f5II-17" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="k7EdXql89TFJ0GV-f5II-1" source="k7EdXql89TFJ0GV-f5II-8" target="k7EdXql89TFJ0GV-f5II-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
