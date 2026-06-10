@@ -1,0 +1,178 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3">
+  <diagram name="Page-1" id="b36zjP1tx_eYOxiEaNqq">
+    <mxGraphModel dx="1303" dy="2393" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ent_korisnik" value="KORISNIK&#xa;(Supertip)" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="400" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="att_korisnik_id" value="&lt;u&gt;KorisnikID&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="20" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_k1" value="" style="endArrow=none;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.25;" edge="1" parent="1" source="att_korisnik_id" target="ent_korisnik">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_korisnik_ime" value="Ime" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="80" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_k2" value="" style="endArrow=none;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.75;" edge="1" parent="1" source="att_korisnik_ime" target="ent_korisnik">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_korisnik_prezime" value="Prezime" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="-30" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_k3" value="" style="endArrow=none;html=1;exitX=0.5;exitY=1;entryX=0.25;entryY=0;" edge="1" parent="1" source="att_korisnik_prezime" target="ent_korisnik">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_korisnik_email" value="Email" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="-30" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_k4" value="" style="endArrow=none;html=1;exitX=0.5;exitY=1;entryX=0.75;entryY=0;" edge="1" parent="1" source="att_korisnik_email" target="ent_korisnik">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="isa_circle" value="d" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="445" y="150" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_isa_top" value="" style="endArrow=none;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="ent_korisnik" target="isa_circle">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ent_student" value="STUDENT&#xa;(Podtip)" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="240" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ent_djelatnik" value="DJELATNIK&#xa;(Podtip)" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="680" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_isa_stud" value="" style="endArrow=block;html=1;endFill=0;exitX=0;exitY=0.5;entryX=1;entryY=0;" edge="1" parent="1" source="isa_circle" target="ent_student">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_isa_djel" value="" style="endArrow=block;html=1;endFill=0;exitX=1;exitY=0.5;entryX=0;entryY=0;" edge="1" parent="1" source="isa_circle" target="ent_djelatnik">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_stud_indeks" value="&lt;u&gt;BrojIndeksa&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="200" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_s1" value="" style="endArrow=none;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.25;" edge="1" parent="1" source="att_stud_indeks" target="ent_student">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_stud_prosjek" value="UkupniProsjek" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="260" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_s2" value="" style="endArrow=none;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.75;" edge="1" parent="1" source="att_stud_prosjek" target="ent_student">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_podnosi" value="Podnosi" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="250" y="360" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_rel_podnosi1" value="1" style="endArrow=none;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;labelBackgroundColor=none;" edge="1" parent="1" source="ent_student" target="rel_podnosi">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="300" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ent_prijava" value="PRIJAVA" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="240" y="500" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_rel_podnosi2" value="N" style="endArrow=none;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;labelBackgroundColor=none;" edge="1" parent="1" source="rel_podnosi" target="ent_prijava">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_prijava_id" value="&lt;u&gt;PrijavaID&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="510" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_p1" value="" style="endArrow=none;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="att_prijava_id" target="ent_prijava">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ent_natjecaj" value="NATJEČAJ" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="20" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_pripada" value="Pripada" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="30" y="500" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_n1" value="1" style="endArrow=none;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;labelBackgroundColor=none;" edge="1" parent="1" source="ent_natjecaj" target="rel_pripada">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_n2" value="N" style="endArrow=none;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;labelBackgroundColor=none;" edge="1" parent="1" source="rel_pripada" target="ent_prijava">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_natjecaj_id" value="&lt;u&gt;NatjecajID&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="35" y="290" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_nat1" value="" style="endArrow=none;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="att_natjecaj_id" target="ent_natjecaj">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_rezultira" value="Rezultira" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="450" y="500" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_rez1" value="1" style="endArrow=none;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;labelBackgroundColor=none;" edge="1" parent="1" source="ent_prijava" target="rel_rezultira">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ent_lista" value="BODOVNA_LISTA" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="630" y="500" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_rez2" value="1" style="endArrow=none;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;labelBackgroundColor=none;" edge="1" parent="1" source="rel_rezultira" target="ent_lista">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_lista_id" value="&lt;u&gt;ListaID&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="430" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_l1" value="" style="endArrow=none;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="att_lista_id" target="ent_lista">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_dodjeljuje" value="Dodjeljuje" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="450" y="220" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_djel1" value="1" style="endArrow=none;html=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;labelBackgroundColor=none;" edge="1" parent="1" source="ent_djelatnik" target="rel_dodjeljuje">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_djel2" value="N" style="endArrow=none;html=1;exitX=1;exitY=1;entryX=0.5;entryY=0;labelBackgroundColor=none;" edge="1" parent="1" source="rel_dodjeljuje" target="ent_lista">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ent_paviljon" value="PAVILJON" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="240" y="760" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="att_pav_id" value="&lt;u&gt;PaviljonID&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="255" y="850" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_pav1" value="" style="endArrow=none;html=1;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" edge="1" parent="1" source="att_pav_id" target="ent_paviljon">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_sadrzi" value="Sadrži" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="450" y="760" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_sadrzi1" value="1" style="endArrow=none;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;labelBackgroundColor=none;" edge="1" parent="1" source="ent_paviljon" target="rel_sadrzi">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ent_soba" value="SOBA" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="640" y="760" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_sadrzi2" value="N" style="endArrow=none;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;labelBackgroundColor=none;" edge="1" parent="1" source="rel_sadrzi" target="ent_soba">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_soba_id" value="&lt;u&gt;SobaID&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="655" y="850" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_sob1" value="" style="endArrow=none;html=1;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" edge="1" parent="1" source="att_soba_id" target="ent_soba">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ent_useljenje" value="USELJENJE&#xa;(Ugovor - Spojni M:N)" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="840" y="350" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_m_n_student" value="1" style="endArrow=none;html=1;exitX=1;exitY=0.5;entryX=0.5;entryY=0;labelBackgroundColor=none;" edge="1" parent="1" source="ent_student" target="ent_useljenje">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_m_n_soba" value="N" style="endArrow=none;html=1;exitX=1;exitY=0.5;entryX=0.5;entryY=1;labelBackgroundColor=none;" edge="1" parent="1" source="ent_soba" target="ent_useljenje">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_ugovor_id" value="&lt;u&gt;UgovorID&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="360" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_u1" value="" style="endArrow=none;html=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="att_ugovor_id" target="ent_useljenje">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
